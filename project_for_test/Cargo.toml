@@ -1,0 +1,25 @@
+[package]
+name = "project_for_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1"
+carbon-core = { git ="https://github.com/sevenlabs-hq/carbon", rev="f3f1a5fc5c99bd7cf07b30b6d1e1992a61952fbc", version = "0.4.0"}
+carbon-raydium-amm-v4-decoder = { git ="https://github.com/sevenlabs-hq/carbon", rev="f3f1a5fc5c99bd7cf07b30b6d1e1992a61952fbc", version = "0.4.0"}
+dotenvy = "0.15"
+solana-program = "=2.0.10"
+solana-client = "=2.0.10"  
+solana-sdk = "=2.0.10"  # Должна совпадать с solana-client!
+solana-transaction-status = "=2.0.10"
+solana-rpc-client-api = "=2.0.10"
+tokio = { version = "1", features = ["full"] }  
+serde = { version = "1", features = ["derive"] } 
+tokio-tungstenite = "0.20"
+url = "2.5" 
+serde_json = "1"  
+futures-util = "0.3"
+reqwest = "0.11"
+base64 = "0.21"
+bincode = "1.3"
+anyhow = "1.0"
